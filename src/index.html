@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
+        <title>lviv coffee manufacture</title>
+        <script defer src="./lazyLoad.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link rel="stylesheet" href="./slider.css">
+        <link rel="stylesheet" href="./@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="./input.css">
+    </head>
+    <body>
+        <section class="firstScreen">
+            <header class="navbar navbar-light row">
+                <nav class="navbar navbar-red amber lighten- mb-2 col-12 justify-content-center">
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent41" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="white-text solo">
+                            <img src="./images/bars.svg" alt="bar">
+                        </span>
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary no-active">МАГАЗИН</button>
+                        <button type="button" class="btn btn-secondary solo dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Наша канцепція</a>
+                            <a class="dropdown-item" href="#">Сорти кави</a>
+                        </div>
+                    </div>
+                    <div class="btn-group cart">
+                        <button type="button" class="btn solo btn-secondary">
+                            <img src="./images/cart.svg" alt="cart">
+                        </button>
+                        <button type="button" class="btn btn-secondary solo cart-data" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="numberOfItems">10</span>
+                        </button>
+                    </div>
+                    <nav class="navbar navbar-solo navbar-red amber lighten- col-6  headerDownloadLinks justify-content-end">
+                        <div class="btn-group cart">
+                            <button type="button" class="btn solo btn-secondary">
+                                <img src="./images/apple.svg" alt="apple">
+                            </button>
+                            <button type="button" class="btn btn-secondary  cart-data" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="nameOfStore">App Store</span>
+                            </button>
+                        </div>
+                        <div class="btn-group cart">
+                            <button type="button" class="btn solo btn-secondary">
+                                <img src="./images/google-play-brands.svg" data-src="./images/google-play-brands.svg" class="lazy-load" alt="google play">
+                            </button>
+                            <button type="button" class="btn btn-secondary  cart-data" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="nameOfStore">Google Play</span>
+                            </button>
+                        </div>
+                    </nav>
+                </nav>
+            </header>
+            <div class="slider_container">
+                <div id="carouselControls" class="carousel vertical slide " data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="01">
+                            <img src="./images/carousel_item_01.png" alt="coffe">
+                        </div>
+                        <div class="carousel-item" id="02">
+                            <img src="./images/carousel_item_02.png" alt="coffe">
+                        </div>
+                        <div class="carousel-item" id="03">
+                            <img src="./images/carousel_item_03.png" alt="coffe">
+                        </div>
+                        <div class="carousel-item" id="04">
+                            <img src="./images/carousel_item_04.png" alt="coffe">
+                        </div>
+                        <div class="coffeBagName_H_3" id="historyThird"></div>
+                        <div class="coffeBagName_H_2" id='historySecond'></div>
+                        <div class="coffeBagName_H_1" id="historyFirst"></div>
+                    </div>
+                    <div class="carouselControll">
+                        <div class="numberOfBug">01</div>
+                        <div class="coffeBagName">
+                            <span>Кава ароматизована</span>
+                            <h3 class="coffeName">«Топлене молоко»</h3>
+                        </div>
+                        <div class="prevButton">
+                            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="nextButton">
+                            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articlesBlock">
+            <div class="articlesBlock_leftSide">
+                <div class="number">01</div>
+                <div class="titleBlock">
+                    <div class="title">
+                        <h2>Пуровер (горнятко Hario)</h2>
+                    </div>
+                    <div class="text">
+                        <h4>Ми частина великої культури кави. Разом з вами
+            ми творимо спільноту тих, хто знаться на каві.
+          </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="articlesBlock_rightSide">
+                <div class="articlesBlock_rightSide__first">
+                    <div class="number">02</div>
+                    <div class="titleBlock">
+                        <div class="title">
+                            <h2>Сифон (кавовий вакуум)</h2>
+                        </div>
+                        <div class="text">
+                            <h4>Для приготуванні кави за допомогою сифону у нижню колбу потрібно налити воду
+            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="articlesBlock_rightSide__horizontal">
+                    <div class="articlesBlock_rightSide__second">
+                        <div class="number">03</div>
+                        <div class="titleBlock">
+                            <div class="title">
+                                <h2>Кемекс</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articlesBlock_rightSide__third">
+                        <div class="number">04</div>
+                        <div class="titleBlock">
+                            <div class="title">
+                                <h2>Аеропрес</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantage">
+            <div class="advantageMainBlock">
+                <img src="./images/advantageMainBlock__BOB.png" data-src="./images/advantageMainBlock__BOB.png" class="lazy-load" alt="BOB">
+                <h2>Мануфактура кави</h2>
+                <span>одна з кращих кавярень</span>
+                <p>Львівська мануфактура кави - це частина великої культури кави.
+        Разом з вами ми творимо спільноту тих, хто знаться на каві.</p>
+            </div>
+            <div class="advantageYellowPart">
+                <div class="example__frame">
+                    <div id="intro" class="slider glide glide--ltr glide--carousel glide--swipeable">
+                        <div class="blur_left">
+                            <img src="./images/slider_blur.png" data-src="./images/slider_blur.png" class="lazy-load" alt="slider blur">
+                        </div>
+                        <div class="blur_right">
+                            <img src="./images/slider_blur.png" data-src="./images/slider_blur.png" class="lazy-load" alt=" slider blur">
+                        </div>
+                        <div class="slider__track glide__track" data-glide-el="track">
+                            <ul class="slider__slides glide__slides" style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2298.5px; transform: translate3d(-320.625px, 0px, 0px);">
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">01</div>
+                                        <h4>
+                                            МАЙСТЕРНIСТЬ<br>I ДОСКОНАЛIСТЬ
+                                        </h4>
+                                        <span>Наші працівники ­ майстри свого ремесла, вони
+                    знаються на каві і люблять каву. Наша справа ­ кава!</span>
+                                    </div>
+                                </li>
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">02</div>
+                                        <h4>
+                                            РIЗНОМАНIТТЯ<br>ТА ЯКIСТь 
+                                        </h4>
+                                        <span>Ми готуємо каву з понад 40 найкращих видів та сумішей, а наш асортимент кави -
+                    найширший у
+                    Львові. Ви можете не лише покуштувати каву, але й придбати її додому у нашій
+                    крамниці.</span>
+                                    </div>
+                                </li>
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">03</div>
+                                        <h4>
+                                            ТЕХНОЛОГIЯ <br>ТА СВIЖIСТЬ 
+                                        </h4>
+                                        <span>Ми дотримуємося основних канонів приготування, де для кожного етапу свої
+                    закони, яких
+                    дотримуємося з точністю науковців.Наша кава - свіжобсмажена, свіжозмелена та
+                    свіжозварена.
+                  </span>
+                                    </div>
+                                </li>
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">04</div>
+                                        <h4>
+                                            ЛЮБОВ <br>TА ЩИРIСТЬ 
+                                        </h4>
+                                        <span>Ми дотримуємося основних канонів приготування, де для кожного етапу свої
+                    закони, яких
+                    дотримуємося з точністю науковців.Наша кава - свіжобсмажена, свіжозмелена та
+                    свіжозварена.
+                  </span>
+                                    </div>
+                                </li>
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">05</div>
+                                        <h4>
+                                            КАВА <br>TА МОЛОКО 
+                                        </h4>
+                                        <span>Ми дотримуємося основних канонів приготування, де для кожного етапу свої
+                    закони, яких
+                    дотримуємося з точністю науковців.Наша кава - свіжобсмажена, свіжозмелена та
+                    свіжозварена.
+                  </span>
+                                    </div>
+                                </li>
+                                <li class="slider__frame glide__slide">
+                                    <div class="slider_item">
+                                        <div class="number">06</div>
+                                        <h4>
+                                            ЧАШКА <br>TА ТУРКА 
+                                        </h4>
+                                        <span>Ми готуємо каву з понад 40 найкращих видів та сумішей, а наш асортимент кави -
+                    найширший у
+                    Львові. Ви можете не лише покуштувати каву, але й придбати її додому у нашій
+                    крамниці.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+                            <button class="slider__bullet glide__bullet glide__bullet--active" data-glide-dir="=0"></button>
+                            <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
+                            <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mapBlock">
+            <h3>Наші кав’ярні</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2464932373287!2d30.35574801568917!3d50.436509196250505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb791193a71d%3A0x326dd8d074a8d248!2z0YPQuy4g0KHQvtCx0L7RgNC90LDRjywgMiwg0J_QtdGC0YDQvtC_0LDQstC70L7QstGB0LrQsNGPINCR0L7RgNGJ0LDQs9C-0LLQutCwLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwODEzMA!5e0!3m2!1sru!2sua!4v1566129018104!5m2!1sru!2sua" allowfullscreen></iframe>
+                <div class="aboutBlock">
+                    <div class="imageBlock">
+                        <img src="./images/maps_01.png" data-src="./images/maps_01.png" class="lazy-load" alt="photo">
+                        <img src="./images/maps_02.png" data-src="./images/maps_02.png" class="lazy-load" alt="photo">
+                        <img src="./images/maps_03.png" data-src="./images/maps_03.png" class="lazy-load" alt="photo">
+                        <img src="./images/maps_01.png" data-src="./images/maps_01.png" class="lazy-load" alt="photo">
+                    </div>
+                    <h2>Про заклад</h2>
+                    <p>Натхненні першим успіхом, і бачачи, що можемо робити більше, було прийняте рішення про відкриття другого
+          закладу в місті. Другою кав’ярнею, яка відкрилась у Львові, була «Львівська Мануфактура Кави» на вулиці
+          Валовій. Відкриттю передували найстрашніші події в історії незалежної України. Cьогодні, для вас працює
+          простора,
+          але водночас затишна кав’ярня, трохи далі від метушливого туристичного Ринку, де можна загубитись і забутись
+          за філіжанкою найароматнішої в місті кави.</p>
+                </div>
+                <div class="placeSelectLine">
+                    <div class="carouselControll ">
+                        <div class="citySelect">
+                            <div id="lviv" onclick="changeAdress(this)">Львів</div>
+                            <div id="odessa" onclick="changeAdress(this)">Одеса</div>
+                            <div id="kyiv" onclick="changeAdress(this)">Київ</div>
+                        </div>
+                        <div class="adressTable">
+                            <div class="topLine">
+                                <div class="adress">
+                                    <span>Адреса:</span>
+                                    <a href="#" id="one">Соборна Площа 2А</a>
+                                </div>
+                                <div class="adress adresss">
+                                    <span>Контакти:</span>
+                                    <a href="tel:+380964009008" id="two">+38096 400 9008</a>
+                                </div>
+                            </div>
+                            <div class="bottomLine ">
+                                <span>Графік роботи:</span>
+                                <a href="#" id="three">Пн - НД | 08:30 - 23:00</a>
+                            </div>
+                        </div>
+                        <div class="buttonBlock justify-content-end">
+                            <div class="prevButton">
+                                <a class="carousel-control-prev" href="#carouselExampleControls" onclick="arrowOnMap('UP')" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="nextButton">
+                                <a class="carousel-control-next" href="#carouselExampleControls" onclick="arrowOnMap('DOWN')" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribeBlock">
+            <div class="subscribeBlock__inner">
+                <h2>Підпишіться</h2>
+                <span>
+                    Щоб завжди бути на звязку та не пропустити цікавих <br>новинок
+        та акцій, підпишіться на наші оновлення
+      
+                </span>
+                <form>
+                    <div class="search">
+                        <input type="email" id="sub" name="q" placeholder="E-mail адреса">
+                        <input type="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="labe">
+                <div class="topLine">
+                    <div class="logo">
+                        <img src="./images/footer_logo.png" data-src="./images/footer_logo.png" class="lazy-load" alt="logo">
+                    </div>
+                    <div class="text">
+                        <h2>
+                            Львівська<br>мануфактура кави
+          
+                        </h2>
+                        <p>Львівська мануфактура кави - це частина великої культури кави.
+            Разом з вами ми творимо спільноту тих, хто знаться на каві.</p>
+                        <div class="socialLinks">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./images/facebook.png" data-src="./images/facebook.png" class="lazy-load" alt="facebook">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./images/insta.png" data-src="./images/insta.png" class="lazy-load" alt="instagram">
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img src="./images/youTube.png" data-src="./images/youTube.png" class="lazy-load" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="siteMapBlock footerBL">
+                <h3>Мапа</h3>
+                <span>Мануфактура</span>
+                <span>Кава та сувеніри</span>
+                <span>Кав’ярні</span>
+                <span>Лабораторія кави</span>
+                <span>Кавові історії</span>
+                <span>Контакти</span>
+            </div>
+            <div class="contacts footerBL">
+                <h3>Контакти</h3>
+                <h5>Наш офіс:</h5>
+                <span><a target="_blank" href=https://goo.gl/maps/VVXcCuqmFMvLbdtA6>м. Львів, просп. Свободи, 22</a></span>   
+                <span> <a href="mailto:info@manufacture.coffee">info@manufacture.coffee</a></span>
+                <span><a href="tel:+38096 438 1714">+38096 438 1714</a></span>
+            </div>
+        </section>
+        <section class="bottomLines">
+            <h3>© Львівська мануфактура кави, 2012 –2019</h3>
+        </section>
+        <script src="@glidejs/glide/dist/glide.min.js"></script>
+        <script>
+            new Glide('.glide',{
+                focusAt: 'center',
+                startAt: 0,
+                type: 'carousel',
+                perView: 2,
+                autoplay: 2000,
+                hoverpause: true,
+                peek: {
+                    before: 300,
+                    after: 300
+                },
+            }).mount();
+        </script>
+        <script defer src="./main.js"></script>
+        <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

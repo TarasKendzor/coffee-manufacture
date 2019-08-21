@@ -1,0 +1,8 @@
+.idea
+references
+.DS_Store
+yarn.lock
+package-lock.json
+backstop_data
+!backstop_data/engine_scripts/
+node_modules

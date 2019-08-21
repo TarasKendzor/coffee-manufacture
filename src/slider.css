@@ -1,0 +1,74 @@
+.carousel-item img {
+  position: relative;
+  bottom: 11vh;
+  right: 30%;
+  width: calc(14vh + 10vw);
+  max-width: 300px;
+}
+
+.carouselControll {
+  z-index: 10000000;
+  margin-top: -44vh;
+}
+
+.numberOfBug {
+  position: absolute;
+  margin-top: -10px;
+  left: 5vw;
+  font-size: calc(7vh + 3vw);
+  color: white;
+}
+
+.coffeBagName {
+  position: absolute;
+  margin-top: 3.1vh;
+  z-index: 0;
+}
+
+.coffeBagName,
+.coffeBagName_H_1,
+.coffeBagName_H_2,
+.coffeBagName_H_3 {
+  left: 50%;
+}
+
+.coffeBagName span {
+  font-size: 20px;
+  color: #DAC047;
+}
+
+.coffeBagName h3 {
+  font-size: 3.5vh;
+  color: #535353;
+}
+
+.coffeBagName_H_1 {
+  position: absolute;
+  top: 40.1vh;
+  opacity: .7;
+}
+
+.coffeBagName_H_2 {
+  position: absolute;
+  top: 28.1vh;
+  opacity: .5;
+}
+
+.coffeBagName_H_3 {
+  position: absolute;
+  top: 16vh;
+  opacity: .2;
+}
+
+.coffeBagName_H_1 span,
+.coffeBagName_H_2 span,
+.coffeBagName_H_3 span {
+  font-size: 20px;
+  color: #DAC047;
+}
+
+.coffeBagName_H_1 h3,
+.coffeBagName_H_2 h3 .coffeBagName_H_3 h3 {
+  font-size: 3.5vh;
+  color: #535353;
+}
