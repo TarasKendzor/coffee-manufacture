@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <title>lviv coffee manufacture</title>
         <script defer src="./lazyLoad.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,7 @@
                         <button type="button" class="btn btn-secondary no-active">МАГАЗИН</button>
                         <button type="button" class="btn btn-secondary solo dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Наша канцепція</a>
+                            <a class="dropdown-item" href="#">Наша концепція</a>
                             <a class="dropdown-item" href="#">Сорти кави</a>
                         </div>
                     </div>
@@ -315,7 +315,7 @@
                 </span>
                 <form>
                     <div class="search">
-                        <input type="email" id="sub" name="q" placeholder="E-mail адреса">
+                        <input type="email" id="sub" name="subscribe" placeholder="E-mail адреса" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required>
                         <input type="submit" value="">
                     </div>
                 </form>
@@ -350,19 +350,20 @@
             </div>
             <div class="siteMapBlock footerBL">
                 <h3>Мапа</h3>
-                <span>Мануфактура</span>
-                <span>Кава та сувеніри</span>
-                <span>Кав’ярні</span>
-                <span>Лабораторія кави</span>
-                <span>Кавові історії</span>
-                <span>Контакти</span>
+                <a href="#"></a>
+                <span><a href="#">Мануфактура</a></span>
+                <span><a href="#">Кава та сувеніри</a></span>
+                <span><a href="#">Кав’ярні</a></span>
+                <span><a href="#">Лабораторія кави</a></span>
+                <span><a href="#">Кавові історії</a></span>
+                <span><a href="#">Контакти</a></span>
             </div>
             <div class="contacts footerBL">
                 <h3>Контакти</h3>
                 <h5>Наш офіс:</h5>
                 <span><a target="_blank" href=https://goo.gl/maps/VVXcCuqmFMvLbdtA6>м. Львів, просп. Свободи, 22</a></span>   
                 <span> <a href="mailto:info@manufacture.coffee">info@manufacture.coffee</a></span>
-                <span><a href="tel:+38096 438 1714">+38096 438 1714</a></span>
+                <span><a href="tel:+380964381714">+38096 438 1714</a></span>
             </div>
         </section>
         <section class="bottomLines">
@@ -374,8 +375,8 @@
                 focusAt: 'center',
                 startAt: 0,
                 type: 'carousel',
-                perView: 2,
-                autoplay: 2000,
+                perView: 3,
+                autoplay: 4000,
                 hoverpause: true,
                 peek: {
                     before: 300,
@@ -383,9 +384,9 @@
                 },
             }).mount();
         </script>
-        <script defer src="./main.js"></script>
         <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script defer src="./main.js"></script>
     </body>
 </html>

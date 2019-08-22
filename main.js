@@ -20,6 +20,7 @@ const cream = '<span>Кава ароматизована</span> <h3 class="coffe
 const milk = '<span>Кава ароматизована</span> <h3 class="coffeName_H_1">«Топлене молоко»</h3> ';
 
 const carrouselContent = function(e) {
+
   if (firstBag.classList[1] === 'active') {
     numberOfBug[0].innerHTML = '01';
     coffeName[0].innerHTML = '«Топлене молоко»';
@@ -71,6 +72,7 @@ const clearStyle = () => {
 
 function arrowOnMap() {
   clearStyle();
+  console.log(x)
   x++;
   if (x === 3) {
     odessa.style.color = '#3b3b3b';

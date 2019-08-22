@@ -299,10 +299,12 @@ header {
   justify-content: space-between;
   cursor: pointer;
   padding: 20px;
+  border-top: 6px solid transparent;
 }
 
 .articlesBlock_leftSide:hover, .articlesBlock_rightSide__first:hover, .articlesBlock_rightSide__second:hover, .articlesBlock_rightSide__third:hover {
   border-top: 6px solid #FCDB44;
+  transition: border-color .3s ease;
 }
 
 .articlesBlock_rightSide__second, .articlesBlock_rightSide__third {
@@ -410,7 +412,7 @@ header {
 .blur_left {
   position: absolute;
   margin-top: 5px;
-  left: -0;
+  left: 0;
   z-index: 100000000000000;
 }
 
@@ -856,6 +858,8 @@ input[type="email"] {
   width: 570px;
   height: 60px;
   vertical-align: middle;
+  border: 2px solid transparent;
+  transition: border-color .3s ease;
 }
 
 input[type="submit"] {
@@ -969,6 +973,7 @@ input[type="submit"] {
 
 .socialLinks a:hover {
   opacity: .6;
+  transition: opacity .3s ease;
 }
 
 .siteMapBlock {
@@ -1016,6 +1021,7 @@ input[type="submit"] {
 }
 .footerBL span:hover{
   opacity: .6;
+  transition: opacity .3s ease;
 }
 
 @media screen and (max-width: 425px) {
