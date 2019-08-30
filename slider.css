@@ -1,6 +1,6 @@
 .carousel-item img {
   position: relative;
-  bottom: 11vh;
+  bottom: 2vh;
   right: 30%;
   width: calc(14vh + 10vw);
   max-width: 300px;

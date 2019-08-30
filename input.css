@@ -1,3 +1,9 @@
+ @font-face {
+   font-family: 'IntroRost Base';
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/introrust-base.otf")
+ }
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -22,6 +28,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
+h2,h3,h4, .no-active, .coffeBagName span ,.set-font , .dropdown-item,.numberOfItems,.numberOfBug,.number,.sitySelect div,.adressTable div{
+  font-family:'IntroRost Base', sans-serif;
+}
 
 .lazy-load, .lazy-loaded {
   -webkit-transition: opacity 0.3s;
@@ -45,19 +54,32 @@ body {
 
 .dropdown-menu {
   padding: 0;
+  margin-top: 0;
 }
-
+#header-img{
+  position: absolute;
+  top: 20%;
+  left: -8%;
+  background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+}
 .dropdown-item {
   background-color: #FFE469;
   cursor: pointer;
+  /* padding: 0.25rem 1.8rem  0.25rem 0.39rem; */
+  padding: 16px 51.1px 16px 8px;
+  border-bottom: 2px  solid #535353;
 }
-
+.dropdown-item:nth-last-child(1) {
+  border-bottom: none;
+}
 .dropdown-item:hover {
-  color: #535353
+  background-color: #FFE469;
 }
 
 .navbar-toggler, .btn-secondary {
-  background-color: #FCDB44;
+  background-color: #FFE469;
   border-radius: 0;
   height: 52px;
   color: #535353;
@@ -67,9 +89,9 @@ body {
 }
 
 .btn-secondary:hover {
-  background: #fcdb42;
+  background: #FFE469;
   border: 1px solid #FCDB44;
-  color: #535353;
+  color: inherit;
 }
 
 .navbar-light .navbar-toggler {
@@ -80,14 +102,26 @@ body {
 .dropdown-toggle {
   background: #FFE469;
 }
-
 .cart .cart-data {
-  background: #FFE469;
+  background: #FCDB44;
 }
-
-.cart-data:hover {
+#drop{
+  background: #FCDB44;
+}
+#drop:hover {
+    background: #FCDB44;
+}
+.show>.btn-secondary.dropdown-toggle  {
+  color: #535353;
+   background-color: #FFE469;
+   border-color: #FFE469;
+}
+.show>.btn-secondary.dropdown-toggle:focus{
+  box-shadow: inherit;
+}
+/* .cart-data:hover {
   background: #E5BC00
-}
+} */
 
 .btn:focus, .btn:active {
   outline: none !important;
@@ -132,11 +166,10 @@ header {
 
 .solo img {
   -webkit-transform: scale(0.7);
-  transform: scale(0.7);
+  transform: scale(0.8);
   -webkit-filter: opacity(70%);
   filter: opacity(65%);
 }
-
 .row {
   margin: 0;
 }
@@ -237,6 +270,7 @@ header {
 }
 
 .articlesBlock_leftSide {
+  position: relative;
   width: 500px;
   height: 500px;
   background-image: url(./images/01.png);
@@ -251,6 +285,7 @@ header {
 }
 
 .articlesBlock .number {
+  position: absolute;
   font-size: 70px;
 }
 
@@ -259,6 +294,7 @@ header {
 }
 
 .titleBlock .text h4 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -301,10 +337,72 @@ header {
   padding: 20px;
   border-top: 6px solid transparent;
 }
+#small-corn {
+  position: absolute;
+  top: 90%;
+  left: 88%;
+  width: 84px;
+  height: 74px;
+}
+.articlesBlock h2 {
+  position: relative;
+  text-shadow: 1px 3px 3px #000054;
+}
+.articlesBlock h2 span {
+  position: absolute;
+  top: -326%;
+  z-index: 4;
 
-.articlesBlock_leftSide:hover, .articlesBlock_rightSide__first:hover, .articlesBlock_rightSide__second:hover, .articlesBlock_rightSide__third:hover {
-  border-top: 6px solid #FCDB44;
-  transition: border-color .3s ease;
+}
+.articlesBlock h2:hover::after{
+ width: 90%;
+ z-index: 3;
+}
+.articlesBlock h2::after{
+  content: '';
+  display: block;
+  position: relative;
+  top: 60%;
+  width: 0;
+  height: 6px;
+  background: #FCDB44;
+  transition: width .3s;
+}
+.articlesBlock_leftSide::before{
+  position: relative;
+  content: "";
+  top: -4.4%;
+  left: -4.3%;
+  width: calc(100% + 40px);
+  height: 0;
+  background: #FCDB44;
+  transition: height .3s;
+}
+.articlesBlock_rightSide__first::before{
+  position: relative;
+  content: "";
+  top: -10%;
+  left: -4.4%;
+  width: calc(100% + 40px);
+  height: 0px;
+  background: #FCDB44;
+  transition: height .3s;
+}
+.articlesBlock_rightSide__second::before,.articlesBlock_rightSide__third::before{
+  position: relative;
+  content: "";
+  top: -11.1%;
+  left: -10.6%;
+  width: calc(100% + 40px);
+  height: 0;
+  background: #FCDB44;
+  transition: height .3s;
+}
+.articlesBlock_leftSide:hover::before,.articlesBlock_rightSide__first:hover::before{
+  
+}
+.articlesBlock_leftSide:hover::before, .articlesBlock_rightSide__first:hover::before, .articlesBlock_rightSide__second:hover::before, .articlesBlock_rightSide__third:hover::before {
+  height:6px;
 }
 
 .articlesBlock_rightSide__second, .articlesBlock_rightSide__third {
@@ -349,7 +447,7 @@ header {
   height: 820px;
   width: 100%;
   background-color: #FCDB44;
-  background-image: url(./images/yelloy_texture.png);
+  background-image: url(./images/Mask\ Group\ 25.png);
 }
 
 .advantageMainBlock {
@@ -358,7 +456,7 @@ header {
   height: 220px;
   background: white;
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+   box-shadow:0px 5px 80px #00000036;
   z-index: 10000000;
   position: relative;
   top: 110px;
@@ -379,7 +477,7 @@ header {
 
 .advantageMainBlock img {
   position: absolute;
-  bottom: 190px;
+  bottom: 206px;
   width: 140px;
 }
 
@@ -412,8 +510,12 @@ header {
 .blur_left {
   position: absolute;
   margin-top: 5px;
+  top: -20%;
   left: 0;
-  z-index: 100000000000000;
+  z-index: 100;
+}
+.blur_left img ,.blur_right img {
+  width: 127%;
 }
 
 .blur_right {
@@ -421,8 +523,9 @@ header {
   transform: rotate(180deg);
   position: absolute;
   margin-top: 0;
+  top: -20%;
   right: 0;
-  z-index: 100000000000000;
+  z-index: 100;
 }
 
 .slider__frame, .glide__slide {
@@ -461,13 +564,21 @@ header {
 }
 
 .glide__bullets button {
-  outline: none;
+  /* outline: inherit */
 }
 
 .glide__bullet--active {
-  background: red;
+  width: 25px;
+  height: 25px;
+    outline: 3px solid #E5BC00;
+  
   background-color: #E5BC00;
-  border: 3px solid rgb(189, 154, 0);
+  border: 4px solid #fbd851;
+}.glide__bullet:focus {
+  outline: none;
+}
+.glide__bullet--active:focus{
+  outline: 3px solid #E5BC00;
 }
 
 .slider_item {
@@ -511,7 +622,7 @@ header {
 
 .slider_item span {
   font-size: calc(.6vw + .9vh);
-  margin-top: 7%;
+  margin-top: 1%;
 }
 
 .slider_item .number, .slider_item h4, .slider_item span {
@@ -543,6 +654,7 @@ header {
 
 .mapBlock h3 {
   position: relative;
+  margin-top: 4%;
   top: -110px;
   font-size: 38px;
 }
@@ -632,13 +744,14 @@ header {
 .placeSelectLine .carouselControll {
   font-weight: bold;
   position: absolute;
-  width: 100%;
+  width: 103%;
   height: 140px;
   left: 0;
   bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 0px -5px 20px #00000026;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -653,11 +766,15 @@ header {
 
 .placeSelectLine .carouselControll .citySelect {
   background: #FCDB44;
-  width: 50%;
   height: 100%;
 }
 
-.citySelect {
+.citySelect {    
+  position: relative;
+  left: -3%;
+  background: #FCDB44;
+  width: 54%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,16 +787,32 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: calc(1.2vw + 2vh);
+  font-size: 32px;
   color: #5353537c;
 }
 
 .citySelect div {
+  position: relative;
   cursor: pointer;
+  font-family:'IntroRost Base', sans-serif;
 }
-
+#footer-img-left{
+  position: absolute;
+  z-index: 8;
+}
+#footer-img-right{
+  position: absolute;
+  z-index: 8;
+  left: 72%;
+}
+.citySelect img {
+  position: absolute;
+  top: -11%;
+  left: 0;
+  
+}
 .adressTable {
-  width: 44.8%;
+  width: 44.4%;
   height: 100%;
   padding: 20px;
   display: -webkit-box;
@@ -696,7 +829,11 @@ header {
   -ms-flex-align: center;
   align-items: center;
 }
-
+.adressTable img {
+  position: absolute;
+  top: -11%;
+  right: 0;
+}
 .buttonBlock .prevButton, .buttonBlock .nextButton {
   width: auto;
   height: auto;
@@ -799,11 +936,15 @@ header {
 }
 
 .subscribeBlock {
+  position: relative;
   width: 100%;
   height: 620px;
   background-image: url('./images/subscribe_background.png');
 }
-
+.subscribeBlock img {
+  position: absolute;
+  right: 0;
+}
 .subscribeBlock__inner {
   width: 100%;
   height: 100%;
@@ -937,6 +1078,8 @@ input[type="submit"] {
 }
 
 .text h2 {
+  position: relative;
+  z-index: 9;
   font-size: 32px;
   color: white;
 }
@@ -984,6 +1127,8 @@ input[type="submit"] {
 }
 
 .footerBL {
+  position: relative;
+  z-index: 9;
   height: 100%;
   width: 24%;
   background: #4B4B4B;
