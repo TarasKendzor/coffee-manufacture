@@ -1269,6 +1269,7 @@ input[type="submit"] {
 }
 @media screen and (max-width: 1024px) {
   #big-corn-bottom {
+    
     left: 176%;
 }
   #medium-corn-right {
